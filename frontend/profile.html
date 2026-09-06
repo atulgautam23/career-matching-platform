@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Profile - CareerMatch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Career<span>Match</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#features">
+                Features
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- PROFILE -->
+
+    <main>
+
+        <section class="profile-section">
+
+
+            <div class="profile-container">
+
+
+                <div class="profile-heading">
+
+                    <p class="section-label">
+                        GET STARTED
+                    </p>
+
+                    <h1>
+                        Build Your Profile
+                    </h1>
+
+                    <p>
+                        Tell us about yourself and your career goals.
+                        We'll compare your skills with real job requirements.
+                    </p>
+
+                </div>
+
+
+
+                <form id="profileForm">
+
+
+                    <!-- PERSONAL INFORMATION -->
+
+                    <div class="form-section">
+
+                        <h2>
+                            Personal Information
+                        </h2>
+
+                        <p>
+                            Basic information about you.
+                        </p>
+
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- EDUCATION -->
+
+                    <div class="form-section">
+
+                        <h2>
+                            Education
+                        </h2>
+
+                        <p>
+                            Add your current or most recent education.
+                        </p>
+
+
+                        <label for="degree">
+                            Degree
+                        </label>
+
+                        <input
+                            type="text"
+                            id="degree"
+                            placeholder="B.Tech in Computer Science"
+                            required
+                        >
+
+
+                        <label for="institution">
+                            Institution
+                        </label>
+
+                        <input
+                            type="text"
+                            id="institution"
+                            placeholder="Enter your college or university"
+                            required
+                        >
+
+
+                        <label for="graduation_year">
+                            Graduation Year
+                        </label>
+
+                        <input
+                            type="number"
+                            id="graduation_year"
+                            placeholder="2027"
+                            min="1900"
+                            max="2100"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- SKILLS -->
+
+                    <div class="form-section">
+
+                        <h2>
+                            Your Skills
+                        </h2>
+
+                        <p>
+                            Add the skills you currently have.
+                            Separate each skill with a comma.
+                        </p>
+
+
+                        <label for="skills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="skills"
+                            placeholder="Python, SQL, Pandas, Excel"
+                        >
+
+
+                        <div class="input-hint">
+                            Example: Python, SQL, Pandas, NumPy, Power BI
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CAREER GOAL -->
+
+                    <div class="form-section">
+
+                        <h2>
+                            Career Goal
+                        </h2>
+
+                        <p>
+                            Which job role are you targeting?
+                        </p>
+
+
+                        <label for="target_job_role">
+                            Target Job Role
+                        </label>
+
+                        <input
+                            type="text"
+                            id="target_job_role"
+                            placeholder="Data Analyst"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+<button
+    type="submit"
+    class="profile-submit"
+    onclick="submitProfile(event)"
+>
+    Analyze My Profile
+    <span>→</span>
+</button>
+                </form>
+
+
+                <p id="message"></p>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

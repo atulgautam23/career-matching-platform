@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Analysis - CareerMatch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Career<span>Match</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ANALYSIS -->
+
+    <main>
+
+        <section class="analysis-section">
+
+            <div class="analysis-container">
+
+
+                <div class="analysis-heading">
+
+                    <p class="section-label">
+                        CAREER ANALYSIS
+                    </p>
+
+                    <h1>
+                        Your Skill Analysis
+                    </h1>
+
+                    <p class="analysis-subtitle">
+                        See how well your current skills match
+                        your target career.
+                    </p>
+
+                </div>
+
+
+
+                <!-- MATCH SCORE -->
+
+                <div class="match-card">
+
+                    <div class="match-info">
+
+                        <p class="small-label">
+                            OVERALL SKILL MATCH
+                        </p>
+
+                        <h2>
+                            Your Career Compatibility
+                        </h2>
+
+                        <p>
+                            Based on the skills required for your
+                            selected job role.
+                        </p>
+
+                    </div>
+
+
+                    <div class="match-score">
+
+                        <div class="score-circle">
+
+                            <span id="matchPercentage">
+                                ...
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SKILLS -->
+
+                <div class="skills-section">
+
+
+                    <!-- CURRENT -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-card-header">
+
+                            <div class="skill-icon current-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Your Skills
+                                </h2>
+
+                                <p>
+                                    Skills you already have
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div id="currentSkills">
+                            Loading...
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- REQUIRED -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-card-header">
+
+                            <div class="skill-icon required-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Required Skills
+                                </h2>
+
+                                <p>
+                                    Skills needed for the role
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div id="requiredSkills">
+                            Loading...
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MISSING -->
+
+                    <div class="skill-card missing-card">
+
+                        <div class="skill-card-header">
+
+                            <div class="skill-icon missing-icon">
+                                !
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Skill Gaps
+                                </h2>
+
+                                <p>
+                                    Skills you should develop
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div id="missingSkills">
+                            Loading...
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- JOB BUTTON -->
+
+                <div class="jobs-button-container">
+
+                    <p>
+                        Ready to see opportunities that match your skills?
+                    </p>
+
+                    <button
+                        class="jobs-button"
+                        onclick="goToJobs()"
+                    >
+                        Find Recommended Jobs
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <div id="analysisMessage"></div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

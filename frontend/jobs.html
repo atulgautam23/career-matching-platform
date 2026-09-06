@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommended Jobs - CareerMatch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Career<span>Match</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#" id="analysisLink">
+                Analysis
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- JOBS -->
+
+    <main>
+
+        <section class="jobs-section">
+
+            <div class="jobs-container">
+
+
+                <div class="jobs-heading">
+
+                    <p class="section-label">
+                        JOB OPPORTUNITIES
+                    </p>
+
+                    <h1>
+                        Jobs That Match You
+                    </h1>
+
+                    <p class="jobs-subtitle">
+                        Real job opportunities ranked by how closely
+                        they match your current skills.
+                    </p>
+
+                </div>
+
+
+
+                <!-- JOB STATUS -->
+
+                <div class="jobs-topbar">
+
+                    <div>
+
+                        <h2>
+                            Recommended Opportunities
+                        </h2>
+
+                        <p>
+                            Based on your target role and skills
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div id="jobsMessage">
+                    Loading jobs...
+                </div>
+
+
+
+                <!-- JOBS -->
+
+                <div id="jobsContainer"></div>
+
+
+
+                <!-- REFRESH -->
+
+                <div class="refresh-container">
+
+                    <button
+                        id="refreshButton"
+                        class="refresh-button"
+                        onclick="refreshJobs()"
+                    >
+                        Load More Jobs
+                        <span>↓</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
