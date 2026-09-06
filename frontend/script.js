@@ -515,7 +515,7 @@ async function submitProfile(event) {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/students/profile",
+            "https://career-matching-platform.onrender.com/students/profile",
             {
                 method: "POST",
 
@@ -695,7 +695,7 @@ async function loadAnalysis(studentId) {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/students/" +
+            "https://career-matching-platform.onrender.com/students/" +
             encodeURIComponent(studentId) +
             "/analysis"
         );
@@ -801,7 +801,7 @@ async function loadJobs(studentId) {
          */
 
         const response = await fetch(
-            "http://127.0.0.1:8000/jobs/recommendations/" +
+            "https://career-matching-platform.onrender.com/jobs/recommendations/" +
             encodeURIComponent(studentId) +
             "?limit=3&page=" +
             page
